@@ -11,7 +11,7 @@ prdUrl bytes.Buffer //holds the temp url
 prdId string //gets product id from user
 )
 func main() {
-	fmt.Print("Enter the product ID: ")
+	//fmt.Print("Enter the product ID: ")
 	fmt.Scanln(&prdId)
 	prdUrl.WriteString(prdId)
 	doc, err := goquery.NewDocument(prdUrl.String())
